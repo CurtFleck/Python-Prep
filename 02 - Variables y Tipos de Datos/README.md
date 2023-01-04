@@ -9,18 +9,19 @@
 ## Variables
 
 Una variable es un espacio de memoria donde guardamos un dato, ese espacio de memoria a la vez recibe un nombre y esto conforma la estructura de datos más simple que podemos encontrar.
+Hola
 
 ![unaImagenConBoxShadow](../_src/assets/02_imagen01.jpg)
 
 Por otro lado existen ciertas normas a la hora de nombrar variables:
 
-* El nombre no puede empezar con un número<br>
-  Por ejemplo "mi_variable" sería correcto, pero "123mi_variable" sería erróneo 
-* No se permite el uso de guiones del medio -<br>
+- El nombre no puede empezar con un número<br>
+  Por ejemplo "mi_variable" sería correcto, pero "123mi_variable" sería erróneo
+- No se permite el uso de guiones del medio -<br>
   Por ejemplo "mi-variable" sería erróneo
-* No se permite el uso de espacios.<br>
+- No se permite el uso de espacios.<br>
   Por ejemplo "mi variable" sería erróneo
-* No usar nombres reservados para Python. Las palabras reservadas son utilizadas por Python internamente, por lo que no podemos usarlas para nuestras variables o funciones.<br>
+- No usar nombres reservados para Python. Las palabras reservadas son utilizadas por Python internamente, por lo que no podemos usarlas para nuestras variables o funciones.<br>
   Por ejemplo, a veces podríamos usar "int" ó "for" y esto nos daría error, porque como se verá más adelante, esas palabras son parte de la sintaxis de Python.
 
 ### Constantes
@@ -32,11 +33,12 @@ Sin embargo, cuando ese dato no lo alojamos en una variable y lo utilizamos dire
 Es importante notar, que podemos encontrarnos con datos de tipos distintos, es decir numéricos, alfanuméricos o booleanos.
 
 En Python tenemos los siguientes:
- * Enteros: el conjunto de números enteros
- * Floats: el conjunto de números reales o de punto flotante
- * Cadenas o Strings: es texto, caracteres alfanuméricos que se introducen entre comillas dobles o simples
- * Booleanos: representan Verdadero ó Falso
- * Complejos: el conjunto de números complejos
+
+- Enteros: el conjunto de números enteros
+- Floats: el conjunto de números reales o de punto flotante
+- Cadenas o Strings: es texto, caracteres alfanuméricos que se introducen entre comillas dobles o simples
+- Booleanos: representan Verdadero ó Falso
+- Complejos: el conjunto de números complejos
 
 Todo valor que pueda ser asignado a una variable tiene asociado un tipo de dato y esto establece qué operaciones se pueden realizar sobre la misma.
 
@@ -52,55 +54,54 @@ Con diferentes tipos de datos podemos hacer diferentes tipos de operaciones. Y h
 
 **Operaciones aritméticas:**
 
-| Operación | Operador | Ejemplo |
-| :---      |  :----:  |    ---: |
-| Suma      | + | 3 + 5.5 = 8.5 |
-| Resta   | -  | 4 - 1 = 3  |
-| Multiplicación | *  | 4 * 2 = 8  |
-| Potenciación | 4<sup>2</sup>  | 4**2 = 16  |
-| División (Cociente) | /  | 4 / 2 = 2  |
-| División (parte entera) | //  | 14 // 3 = 4  |
-| División (resto) | %  | 14 % 3 =  2 |
+| Operación               |   Operador    |       Ejemplo |
+| :---------------------- | :-----------: | ------------: |
+| Suma                    |       +       | 3 + 5.5 = 8.5 |
+| Resta                   |       -       |     4 - 1 = 3 |
+| Multiplicación          |      \*       |    4 \* 2 = 8 |
+| Potenciación            | 4<sup>2</sup> |   4\*\*2 = 16 |
+| División (Cociente)     |       /       |     4 / 2 = 2 |
+| División (parte entera) |      //       |   14 // 3 = 4 |
+| División (resto)        |       %       |    14 % 3 = 2 |
 
 **Operadores relacionales:**
 
-| Operación | Operador | Ejemplo |
-| :---      |  :----:  |    ---: |
-| == | Igual | 10 == 3 = False |
-| != | Distinto | 10 != 3 = True |
-| >	| Mayor	| 10 > 3 = True |
-| < | Menor	| 10 < 3 = False |
-| >= | Mayor o igual | 10 >= 3 = True |
-| <= | Menor o igual | 10 <= 3 = False |
+| Operación |   Operador    |         Ejemplo |
+| :-------- | :-----------: | --------------: |
+| ==        |     Igual     | 10 == 3 = False |
+| !=        |   Distinto    |  10 != 3 = True |
+| >         |     Mayor     |   10 > 3 = True |
+| <         |     Menor     |  10 < 3 = False |
+| >=        | Mayor o igual |  10 >= 3 = True |
+| <=        | Menor o igual | 10 <= 3 = False |
 
 **Operaciones de asignación:**
 
-| Operación | Operador | Ejemplo |
-| :---      |  :----:  |    ---: |
-| =   | x=7  | x=7  |
-| +=  | x+=2  | x=x+2 = 9  |
-| -=  | x-=2  | x=x-2 = 5  |
-| *=  | x*=2  | x=x*2 = 14  |
-| /=  | x/=2  | x=x/2 = 3.5  |
-| %=  | x%=2  | x=x%2 = 1  |
-| //=  | x//=2  | x=x//2 = 3  |
-| **=  | x**=2  | x=x**2 = 49  |
-| &=  | x&=2  | x=x&2 = 2  |
-| ^=  | x^=2  | x=x^2 = 5  |
-| >>=  | x>>=2  | x=x>>2 = 1  |
-| <<= | x<<=2 | x=x<<=2 = 28  |
+| Operación | Operador |       Ejemplo |
+| :-------- | :------: | ------------: |
+| =         |   x=7    |           x=7 |
+| +=        |   x+=2   |     x=x+2 = 9 |
+| -=        |   x-=2   |     x=x-2 = 5 |
+| \*=       |  x\*=2   |   x=x\*2 = 14 |
+| /=        |   x/=2   |   x=x/2 = 3.5 |
+| %=        |   x%=2   |     x=x%2 = 1 |
+| //=       |  x//=2   |    x=x//2 = 3 |
+| \*\*=     | x\*\*=2  | x=x\*\*2 = 49 |
+| &=        |   x&=2   |     x=x&2 = 2 |
+| ^=        |   x^=2   |     x=x^2 = 5 |
+| >>=       |  x>>=2   |    x=x>>2 = 1 |
+| <<=       |  x<<=2   |  x=x<<=2 = 28 |
 
-
-Operación: |=   <br>
-Operador: x|=2  <br>
-Ejemplo: x=x|2 = 7  <br>
+Operación: |= <br>
+Operador: x|=2 <br>
+Ejemplo: x=x|2 = 7 <br>
 
 Cuando tratamos con texto, podemos hacer otras operaciones:
 
-| Operación | Operador | Ejemplo |
-| :---      |  :----:  |    ---: |
-| Concatenar | + | 'hola ' + 'mundo !' = 'hola mundo!' |
-| Multiplicar | * | 'ja ' * 3 = 'ja ja ja' |
+| Operación   | Operador |                             Ejemplo |
+| :---------- | :------: | ----------------------------------: |
+| Concatenar  |    +     | 'hola ' + 'mundo !' = 'hola mundo!' |
+| Multiplicar |    \*    |             'ja ' \* 3 = 'ja ja ja' |
 
 Algunos ejemplos en Python:
 
@@ -168,7 +169,7 @@ Tabla del operador lógico "and", se verifican que A y B sean verdaderas.
 | 0 | 1 | 0 |
 | 1 | 1 | 1 |
 
-Tabla del operador lógico "or", se verifican que A o B sean verdaderas. 
+Tabla del operador lógico "or", se verifican que A o B sean verdaderas.
 | A | B | A or B |
 | :- | :--: | -: |
 | 1 | 0 | 1 |
@@ -201,7 +202,7 @@ True
 
 ### Conversión de tipos de datos
 
-Puede haber ocasiones en las que desee especificar un tipo en una variable. Esto se puede hacer con lo que se denomina **casting**. 
+Puede haber ocasiones en las que desee especificar un tipo en una variable. Esto se puede hacer con lo que se denomina **casting**.
 La conversión de tipo de dato en python se realiza mediante funciones:
 
 int(): construye un número entero a partir de un literal entero, un literal flotante (eliminando todos los decimales) o un literal de cadena (siempre que la cadena represente un número entero)
